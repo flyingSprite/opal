@@ -1,0 +1,22 @@
+{
+  "name": "opal",
+  "version": "1.0.0",
+  "description": "To learn javascript & node.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flyingSprite/opal.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flyingSprite/opal/issues"
+  },
+  "homepage": "https://github.com/flyingSprite/opal#readme",
+  "dependencies": {
+    "moment": "^2.18.1"
+  }
+}
