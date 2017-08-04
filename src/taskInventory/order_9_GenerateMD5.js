@@ -7,7 +7,7 @@ import crypto from 'crypto';
 class GenerateMD5 {
 
   static md5(text) {
-    return crypto.createHash('md5').update(text).digest('hex');
+    return crypto.createHash('md5').update(text, 'utf8').digest('hex');
   }
 }
 
