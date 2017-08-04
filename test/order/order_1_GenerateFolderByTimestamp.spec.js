@@ -1,5 +1,5 @@
 
-import GenerateFolder from '../../src/order/order_1_GenerateFolderByTimestamp';
+import GenerateFolder from '../../src/taskInventory/order_1_GenerateFolderByTimestamp';
 
 // GenerateFolder.generateFolder('/Users/Fernando/Develop/test', '/cc/xxx/sssxx/');
 
