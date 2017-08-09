@@ -6,7 +6,7 @@ import log4js from 'log4js';
  */
 class UseLogWithGenLogFiles {
   constructor() {
-    log4js.configure('./src/taskInventory/denpendency/log4js.json');
+    log4js.configure('./docs/log4js.json');
   }
 }
 
