@@ -13,6 +13,7 @@
     "object-curly-spacing": 0,
     "no-console": 1,
     "no-new": 0,
+    "no-lonely-if": 0,
     "no-param-reassign": [1, { "props": false }],
     "consistent-return": 1
   },

@@ -6,7 +6,7 @@
 class ShowTimeBefore {
 
   static show(currentTimestamp, beforeTimestamp) {
-    if(currentTimestamp < beforeTimestamp) {
+    if (currentTimestamp < beforeTimestamp) {
       return '';
     }
     if (currentTimestamp - beforeTimestamp < 120 * 1000) {
