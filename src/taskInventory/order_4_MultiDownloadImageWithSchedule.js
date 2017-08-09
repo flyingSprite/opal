@@ -15,12 +15,11 @@ class MultiDownloadImageWithSchedule {
       error: 0,
       complete: 0,
       total: this.images.length
-    }
+    };
   }
 
   download(callback) {
-    let index = 0;
-    this.toCrawl(index, callback);
+    this.toCrawl(0, callback);
   }
 
   toCrawl(index, callback) {
@@ -35,10 +34,9 @@ class MultiDownloadImageWithSchedule {
         if (callback) {
           callback(this.report);
         }
-        this.toCrawl(++index, callback)
+        this.toCrawl(index + 1, callback);
       });
     }
-
   }
 }
 
