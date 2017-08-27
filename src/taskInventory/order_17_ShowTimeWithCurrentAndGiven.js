@@ -13,14 +13,14 @@ class ShowTimeBefore {
       return '1分钟前';
     }
     if (currentTimestamp - beforeTimestamp < 60 * 60 * 1000) {
-      const minute = parseInt((currentTimestamp - beforeTimestamp) / 60 / 1000);
+      const minute = Math.floor((currentTimestamp - beforeTimestamp) / 60 / 1000);
       return `${minute}分钟前`;
     }
     if (currentTimestamp - beforeTimestamp < 24 * 60 * 60 * 1000) {
-      const hour = parseInt((currentTimestamp - beforeTimestamp) / 60 / 60 / 1000);
+      const hour = Math.floor((currentTimestamp - beforeTimestamp) / 60 / 60 / 1000);
       return `${hour}小时前`;
     }
-    const day = parseInt((currentTimestamp - beforeTimestamp) / 24 / 60 / 60 / 1000);
+    const day = Math.floor((currentTimestamp - beforeTimestamp) / 24 / 60 / 60 / 1000);
     return `${day}天前`;
   }
 }
