@@ -1,0 +1,4 @@
+
+export const EMAIL_SERVICE = '126';
+export const EMAIL_USERNAME = 'emial_username';
+export const EMAIL_AUTHORIZATION_CODE = 'authorization_code';
