@@ -27,6 +27,33 @@ class LoginSystem {
     };
   }
 
+  request(options, payload) {
+    return new Promise((resolve, reject) => {
+      const request = https.request(options, (res) => {
+        res.on('data', (buffer) => {
+          resolve(buffer.toString());
+        });
+      });
+      request.on('error', (e) => {
+        reject(e);
+      });
+      if (payload) {
+        request.write(JSON.stringify(payload));
+      }
+      request.end();
+    });
+  }
+
+  login2() {
+    const payload = {
+      credentials: {
+        username: 'admin',
+        password: 'a10'
+      }
+    };
+    return this.request(this.options, payload);
+  }
+
   login(callback) {
     const request = https.request(this.options, (res) => {
       res.on('data', (buffer) => {

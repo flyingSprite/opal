@@ -6,3 +6,9 @@ const ls = new LoginSystem();
 ls.login((data) => {
   console.log(data);
 });
+
+ls.login2().then((data) => {
+  console.log(data);
+}).then((e) => {
+  console.log(e);
+});
